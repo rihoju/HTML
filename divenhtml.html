@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+    <title>Div en HTML</title>
+    <meta name="autho" content="Judit del Río Hortelano">
+    <meta name="keywords" content="Div,HTML,Formato">
+    <!--Favicon, icono de la pestaña del navegador-->
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    <style>
+        #div1{
+            background-color: cadetblue;
+            width: 150px;
+            height: 350px;
+        }
+        #div1{
+            padding: 20px;
+            color: azure;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #div2{
+            background-color: blueviolet;
+            width: 150px;
+        }
+        #div2{
+            padding: 100px;
+            color:bisque;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #div3,#div4,#div5{
+            width: 60%;
+            margin:auto;
+
+        }
+        
+        #div3,#div6,#div9{
+            background-color: rgb(228, 171, 16);
+            color:azure;
+        }
+        #div4,#div7,#div10{
+            background-color: rgb(165, 42, 124);
+            color:azure;
+        }
+        #div5,#div8,#div11{
+            background-color: rgb(29, 70, 1);
+            color:azure;
+        }
+        #div6,#div7,#div8{
+            width: 25%;
+            margin: 10px;
+            float: left;
+            padding: 10px;
+        }
+        #contenedor1{
+            width: 70%;
+            margin: auto;
+        }
+        #div9,#div10,#div11{
+            clear: both;
+            width: 25%;
+            padding: 10px;
+            display: inline-block;
+        }
+        #div12{
+            width: 10%;
+            display:inline-block;
+        }
+        #div1,#parrafo2,#div11 p{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--Un div es un contenedor que puede tener otros elementos o etiquetasdentro-->
+    <div id="div1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla rerum sed corrupti voluptates! Incidunt ipsum mollitia molestiae, saepe nisi beatae nihil ea sequi, corrupti voluptatibus placeat obcaecati excepturi fuga molestias?</p>
+        <p id="parrafo2">
+        <a href="#div11"><img src="img/iconos/flecha-abajo.png" alt="Ir al final de la página"></a>
+        </p>
+    </div>
+
+    <!--Ejemplo loco: un div dentro de un párrafo-->
+    <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat debitis obcaecati quas. <div>Velit ipsam ut, alias, eligendi perspiciatis quam iste voluptatum enim soluta aut laboriosam, ea vero molestiae!</div> Rerum, facere?
+    </p>
+
+    <!--Div con varios elementos-->
+    <div id="div2">
+        <h1>El título</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, error perspiciatis illo quo laboriosam commodi quisquam et quaerat reiciendis debitis quos explicabo natus autem ea maxime excepturi? Debitis, amet vitae.
+        </p>
+        <ul>
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+        </ul>
+
+    </div>
+    <!--Múltiples Div-->
+    <h1 style="text-align:center">Múltiples DIV</h1>
+    <!--div*3>h2>p*2-->
+    <div id="div3">
+        <h2>Londres</h2>
+            <p>Capital de Inglaterra</p>
+            <p>Tiene 15 millones de habitantes</p>
+    </div>
+    <div id="div4">
+        <h2>Roma</h2>
+            <p>Capital de Italaia</p>
+            <p>Tiene 4 millones de habitantes</p>
+    </div>
+    <div id="div5">
+        <h2>Madrid</h2>
+            <p>Capital de España</p>
+            <p>Tiene 4 millones de habitantes</p>
+    </div>
+
+    <h2 style="text-align:center">Múltiples cajas una al lado de la otra</h2>
+    <div id="contenedor1">
+        <div id="div6">
+            <h2>Londres</h2>
+                <p>Capital de Inglaterra</p>
+                <p>Tiene 15 millones de habitantes</p>
+        </div>
+        <div id="div7">
+            <h2>Roma</h2>
+                <p>Capital de Italaia</p>
+                <p>Tiene 4 millones de habitantes</p>
+        </div>
+        <div id="div8">
+            <h2>Madrid</h2>
+                <p>Capital de España</p>
+                <p>Tiene 4 millones de habitantes</p>
+        </div>
+    </div>
+    <!--Otra forma de colocar los Div uno al lado de otro-->
+    <h2 style="clear: both;" style="text-align:center">Otra forma de colocar los Div uno al lado de otro</h2>
+    <div id="div9">
+        <h2>Londres</h2>
+            <p>Capital de Inglaterra</p>
+            <p>Tiene 15 millones de habitantes</p>
+    </div>
+    <div id="div10">
+        <h2>Roma</h2>
+            <p>Capital de Italaia</p>
+            <p>Tiene 4 millones de habitantes</p>
+    </div>
+    <div id="div11">
+        <h2>Madrid</h2>
+            <p>Capital de España</p>
+            <p>Tiene 4 millones de habitantes</p>
+    </div>
+    <div id="div12">
+        <a href="#div1"><img src="img/iconos/flecha-arriba.png" alt="Ir al principio de la página"></a>
+    </div>
+</body>
+</html>

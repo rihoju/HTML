@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Conmentario: no se muestra en la página, pero es importante para el programador-->
+    <!-- La etiqueta head contiene los datos sobre el documento-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0"/>
+    <title>&lt;Primer HTML&gt;</title>
+    <meta name="autho" content="Judit del Río"/>
+    <meta name="keywords" content="HTML,ETIQUETAS,HEAD"/>
+</head>
+<body style="background-color: burlywood;">
+    <h1>&quot;Título Principal de una página H1&quot;</h1>
+    <!--ETIQUETAS SIN CIERRE-->
+    <hr><!--MUESTRA UNA LÍNEA HORIZONTAL-->   
+    <h2>&#34;Título Principal de una página H2&#34;</h2>
+    <br><!--Hace un salto de línea-->
+    <h3>Título Principal de una página H3</h3>
+    <h4>Título Principal de una página H4</h4>
+    <h5>Título Principal de una página H5</h5>
+    <h6>Título Principal de una página H6</h6>
+
+    Este es un párrafo sin ninguna etiqueta.
+    Sigo escribiendo sin ninguna etiqueta.
+    <!--La etiqueta <p> me permite organizar los párrafos con saltos de línea-->
+    <p title="Primer párrafo">Este es un párrafo con la etiqueta &lt;p&gt;</p>
+    <p>Sigo escribiendo con la etiqueta&lt;p&gt;</p>
+    <!--Etiquetas con atributos: requieren información para su contenido, por ejemplo la etiqueta <a> que hace refencia a un enlace o link llamado href-->
+    <a href="https://google.es">Ir a Gooogle</a>
+    <br>
+    <img title="navegadores" src="img/diagrama navegadores.jpg" alt="Diagrama 'de' navegadores" width="200">
+    
+    <!-- En un párrafo hago salto de línea dentro de él, ese salto no se mostrará   -->
+    <p style="background-color: azure;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem blanditiis quod aliquam optio, culpa quas quibusdam iure pariatur, laboriosam reiciendis temporibus hic! Corporis, dolorem saepe. Laboriosam ad aspernatur magnam veritatis.</p>
+
+    <!--Si deseo un texto preformateado se usa la etiqueta <pre></pre> -->
+
+    <pre>
+        Mi primera línea de párrafo
+        Mi segunda línea de párrafo
+        Mi tercera línea de párrafo
+        Mi cuarta línea de párrafo
+    </pre>
+
+   <!-- Estilos en HTML atributo de color por ej. necesito el atributo style="popiedad:valor"-->  
+   <h1 style="color:darkorchid;text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: large;">Mi título con color</h1>
+
+   <!-- *** FORMATOS DE TEXTO *** -->
+
+   <p>La novela comienza <b>describiendo</b> a un hidalgo pobre —cuyo <del>exacto</del> nombre solo se revelará al final de la obra: <strong>Alonso Quijano—</strong>, oriundo de un lugar <small>indeterminado</small> de <i>La Mancha</i>, quien <mark>enloquece</mark> leyendo libros de <sup>caballerías</sup> y se cree un <sub>caballero</sub> andante medieval.</p>
+
+   <p>H<sub>2</sub>O</p>
+   <p>Los metros son 50m<sup>3</sup></p>
+
+   <!-- CITAS A UN AUTOR SE UTILIZA EL <blockquote></blockquote> -->
+   <P>Fragmento de Don Quijote de La Mancha</P>
+   <blockquote cite="Don Quijote de La Mancha">"La novela comienza describiendo a un hidalgo pobre —cuyo exacto nombre solo se revelará al final de la obra: Alonso Quijano—, oriundo de un lugar indeterminado de La Mancha, quien enloquece leyendo libros de caballerías y se cree un caballero andante medieval."
+   </blockquote>
+
+   <!-- PARA INDICAR UNA ABREVIATURA, SE UTILIZA <abbr title=""></abbr> -->
+
+   <p>La traducción del <abbr title="W3 Consortium">W3C</abbr> está en todos los idiomas</p>
+
+   <!-- PARA INDICAR UNA DIRECCIÓN DE UN AUTOR / PROPETARIO DE UN ARTÍCULO, SE UTILIZA <address></address> -->
+
+   <P>La dirección es:</P>
+   <address>Calle Campo, 81<br>
+    13700 Tomelloso
+    </address>
+
+    <!-- MOSTRAR UN TEXTO DE DERECHA A IZQUIERDA -->
+    <P><bdo dir="rtl">JUDIT</bdo></P>
+
+    <!-- COLORES EN HTML SE PUEDEN PONER EN VARIOS FORMATOS
+    1. el nombre del color en ingés.
+    2. el hexadecimal ---- blanco: #ffffff  #000000 #F3F4F6
+    -->
+    <h2 style="color:#0000ff;"></h2>
+
+    <!-- ENLACE A PAGINAS EXTERNEAS QUE SE MUESTRA EN UNA NUEVA PESTAÑA  -->
+    <a href="https://youtube.com" target="_blank"><img src="img/iconos/youtube.png" alt="ICONO DE YOUTUBE"></a>
+
+    <!-- ENLACE PARA INDICAR UN TELÉFONO -->
+    <a href="tel:+346998787"><img src="img/iconos/smartphone_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+
+    <!-- ENLACE PARA ENVIAR UN EMAIL A UNA DIRECCIÓN INDICADA -->
+    <a href="mailto:ceat@ceat.es"><img src="img/iconos/mail_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+
+    <!-- ENLACE A UN MAPA -->
+    <a href="https://maps.app.goo.gl/FT7XnPzxcPmeLHzLA" target="_blank"><img src="img/iconos/location_on_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+
+
+    
+</body>
+</html>

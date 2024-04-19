@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1º Formulario</title>
+    <meta name="author" content="Judit">
+    <meta name="keywords" content="Formulario,HTML,CSS">
+<style>
+    #contenedor{
+        width: 50%;
+        margin: auto;
+        padding: 50px;
+        border: 1px groove gray;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #boton1{
+        background-color: green;
+    }
+    #boton2{
+        background-color: red;
+    }
+    #boton1,#boton2{
+        padding: 15px 25px;
+        color: white;
+    }
+    #botones{
+        text-align: center;
+    }
+    #icono1{
+        width: 5%;
+    }
+</style>
+</head>
+<body>
+
+<!--Tablas: <table> .... >/table> Listas: <ul>...<li></li>...</ul>-->
+<!-- En el caso de los formularios, comenzamos con <form>....</form>-->
+
+<div id="contenedor">
+<h1>MI PRIMER FORMULARIO</h1>
+<form autocomplete="on">
+    <fieldset>
+    <!--título al marco-->
+    <legend>Datos personales</legend>
+    <!-- Entrada de datos-->
+    <!-- label -> Etiqueta que muestra el título de la entrada y se debe relacionar con la entrada a través del "id"-->
+    <p>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre" required minlength="3" maxlength="20" pattern="[a-Z]">
+    <!--Por defecto, si no se indica el type, será tipo text-->
+    </p>
+    <p>
+        <label for="apellido">Apellido</label>
+        <input id="apellido" pattern="[a-Z]" size="50" maxlength="20">
+        <!-- Input type se utiliza de muchas maneras y es la más utilizada en los formularios-->
+    </p>
+    
+    <!-- Otros input -> email que la entrada que espera sea con formato email -->
+
+    <p>
+        <label for="email">email</label>
+        <input type="email" id="email" readonly value="jdelrioh@gmail.com" disabled>
+    </p>
+    <p>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">ºº  
+        <!-- Los pattern o patrones o expresiones regulares.... los copias de internet-->
+        <!-- Al menos un número, al menos una letra mayúscula, al menos una minúscula y mínimo 8 caractares-->
+    </p>
+    <p>
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad" min="18" max="105" step="2">
+    </p>
+    <p>
+        <label for="color">Color favorito</label>
+        <input type="color" id="color">
+    </p>
+    <P>
+        <label for="dni">Suba su DNI escaneado</label>
+        <input type="file" name="dni" id="dni" accept="image/jpeg,image/png,image/webp" multiple>
+        <!--El atributo "multiple" sirve para seleccionar varios archivos-->
+        <!--Tipos de archivos que puedes aceptar:(audio/*, audio/mp3)
+                                                 (video/*, video/mp4,video/avi)
+                                                 (*, tipo de documentos (doc,pdf))-->
+    </P>
+    <p>
+        <label for="fnacimiento">Fecha de nacimiento</label>
+        <input type="date" name="fnacimiento" id="fnacimiento" min="1960-01-01" max="2024-03-31">
+        <!--fecha y hora-->
+        <br><br><input type="datetime-local" name="fechahora" id="fechahora">
+        <!--mes-->
+        <br><br><input type="month">
+    </p>
+    <p>
+        <label for="sexo">Sexo</label>
+        <!-- input type="radio", muestra una selección que por norma general solo se puede seleccionar una opción -->
+        <input type="radio" name="sexo" id="sexo" value="mujer">Mujer
+        <input type="radio" name="sexo" id="sexo" value="mujer">Hombre
+    </p>
+    </fieldset>
+    <fieldset>
+        <legend>Datos de la inscripción</legend>
+    <p>
+        <label for="cursos">Cursos de interés</label>
+        <!-- input type="checkbox" son cajas que se pueden seleccionar varias a la vez -->
+        <br><input type="checkbox" name="html" id="html" value="html" checked>HTML
+        <br><input type="checkbox" name="css" id="css" value="css">CSS
+        <br><input type="checkbox" name="phyton" id="phyton" value="phyton">Phyton
+        <br><input type="checkbox" name="java" id="java" value="java">Java
+        <br><input type="checkbox" name="php" id="php" value="php" checked>PHP
+    </p>
+
+        <!--Desplegables -> Select-->
+    <p>
+        <label for="modalidad">Seleccione tipo de impartición</label>
+        <br>
+        <select name="modalidad" id="modalidad">
+            <option value=""></option>
+            <option>Presencial</option>
+            <option>Online</option>
+            <option>Mixta</option>
+        </select>
+    </p>
+
+    <p>    
+    <label for="horario">Preferencia de horario</label>
+    <br>
+        <select name="horario" id="horario" multiple>
+            <option value="manana">Mañana</option>
+            <option value="tarde">Tarde</option>
+        </select>
+    </p>
+    <p>
+        <label for="tiempoestudio">Tiempo de dedicación diaria</label>
+        <br>1<input type="range" name="tiempoestudio" id="tiempoestudio" min="0.30" max="24" step="0.30">24
+    </p>
+    <p>
+        <label for="navegadorpreferido">Navegador preferido</label>
+        <input list="navegador">
+        <datalist id="navegador">
+            <option value="chrome">Chrome</option>
+            <option value="Edge">Edge</option>
+            <option value="firefox">Mozilla Firefox</option>
+            <option value="safari">Safari</option>
+            <option value="opera">Ópera</option>
+
+        </datalist>
+    </p>
+    <p>
+        <!--Input type=image-->
+        <input type="image" src="img/iconos/aceptar.png" alt="aceptar">
+        <input type="image" src="img/iconos/cancelar.png" alt="cancelar">
+    </p>
+    <p>
+        <!--Cuadro de buscar que se complementa con otros lenguajes-->
+        <label for="buscar">Buscar curso</label>
+        <input type="search" name="buscar" id="buscar" size="50">
+    </p>
+    <p>
+        <!--tipo input puede salicitar hora o semana-->
+        <label for="horasolicitud">Hora de la solicitud</label>
+        <input type="time" id="horasolicitud">
+    </p>
+    <p>
+        <label for="semanainicio">Semana para iniciar formación</label>
+        <input type="week" id="semanainicio">
+    </p>
+    <p>
+        <!--Controla la entrada de una url de formato válido-->
+        <label for="urllinkedin"><img src="img/iconos/linkedin.png" id="icono1" alt="LinkedIn"></label>
+        <input type="url" name="linkedin" id="linkedin" size="60">
+    </p>
+    <p>
+        <label for="mensaje">Escribe un mensaje</label><br>
+        <textarea name="mensaje" id="mensaje" cols="70" rows="5" placeholder="máximo 120 caractares" maxlength="120"></textarea>
+    </p>
+    </fieldset>
+
+    <!-- input type="submit" es el botón para enviar los datos y siempre se le debe dar valor y debe ser el último en el formulario -->
+    <P id="botones">
+        <input type="submit" value="Enviar datos" id="boton1">
+        
+        <!-- Limpiar lo que haya escrito en el formulario -->
+        <input type="reset" value="Borrar datos" id="boton2">
+    </P>
+</div>
+</form>
+    
+</body>
+</html>

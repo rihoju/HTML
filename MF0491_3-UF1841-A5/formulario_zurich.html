@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO ZURICH ROCK  ́N ́ ROLL RUNNING SERIESMADRID 2024</title>
+    <style>
+        #contenedor{
+        width: 50%;
+        margin: auto;
+        padding: 50px;
+        border: 1px groove gray;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+        #h2{
+            color: #2167AE;
+            text-align: center;
+        }
+        #boton1{
+        color: red;
+        border-color: red;
+    }
+        #boton2{
+        color: #2167AE;
+        border-color: #2167AE;
+    }
+        #boton3{
+        color: black;
+        border-color: #2167AE;
+    }
+        #boton1,#boton2,#boton3{
+        text-align: center;
+        background-color:white;
+        padding: 15px 25px;
+    }
+
+    </style>
+</head>
+<body>
+    <p>
+        <div style="text-align: center;">
+        <img src="img/encabezado-logo.jpg" alt="logo" width="800px">
+        </div>
+    </p>
+
+    <p>
+        <h1 style="text-align: center;">ZURICH ROCK 'N' ROLL RUNNING SERIES MADRID 2024</h1>
+    </p>
+
+    <P>
+        <div id="h2">
+        <h2>Formulario</h2>
+        </div>
+    </P>
+
+    <p>
+        <h3 style="text-align: center;">MARATÓN - SILLAS DE ATLETISMO Y HENDBIKES: 95,00 €</h3>
+    </p>
+
+    <P>
+        <div id="h2">
+        <h2>Datos personales</h2>
+        </div>
+    </P>
+
+    <p>
+        <div style="text-align: center;">
+            <p>Si estás registrado/a en RockTheSport.com y quieres cargar tus datos:</p>
+            <p>No es obligatoria, pero ahorrarás tiempo.</p>
+        </div>
+    </p>
+
+    <p style="text-align: center;">
+        <button>Identifícate aquí</button>
+    </p>
+
+    <div id="contenedor">
+        <h3 style="text-align: center;">DATOS DEL TITULAR</h3>
+        <form autocomplete="on">
+            <p>
+                <p><label for="nombre"><b>Nombre*</b></label></p>
+                <p><input type="text" id="nombre" maxlength="30" size="130" pattern="[a-Z]"></p>
+            </p>
+            <p>
+                <p><label for="apellidos"><b>Apellidos*</b></label></p>
+                <p><input type="text" id="apellidos" maxlength="50" size="130" pattern="[a-Z]"></p>
+            </p>
+            <p>
+                <p><label for="genero"><b>Género*</b></label></p>
+                <p>
+                    <select name="genero" id="genero">
+                    <option>[Selecciona]</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    </select>
+                </p>
+            </p>
+            <p>
+                <p><label for="fnacimiento"><b>Fecha de nacimiento*</b></label></p>
+                <p>
+                    <select name="dia" id="dia">
+                    <option>Día</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    </select>
+                </p>
+                <p>
+                    <select name="mes" id="mes">
+                    <option>Mes</option>
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Mayo</option>
+                    <option value="6">Junio</option>
+                    <option value="7">Julio</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                    </select>
+                </p>
+                <p>
+                    <select name="año" id="año">
+                    <option>Año</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    </select>
+                </p>
+            </p>
+            <p>
+                <p><label for="dni"><b>DNI*</b></label></p>
+                <p><input type="text" id="dni" maxlength="9" size="130" pattern="[a-Z]" placeholder="Introduce el número"></p>
+            </p>
+            <p>
+                <p><label for="nacionalidad"><b>Nacionalidad*</b></label></p>
+                <p>
+                    <select name="nacionalidad" id="nacionalidad">
+                    <option>[País]</option>
+                    <option value="española">Española</option>
+                    <option value="francesa">Francesa</option>
+                    <option value="inglesa">Inglesa</option>
+                    <option value="italiana">Italiana</option>
+                    </select>
+                </p>
+            </p>
+            <p>
+                <p><label for="pais"><b>País / Provincia*</b></label></p>
+                <p>
+                    <select name="pais" id="pais">
+                    <option value="españa">España</option>
+                    <option value="francia">Francia</option>
+                    <option value="reinounido">Reino Unido</option>
+                    <option value="italia">Italia</option>
+                    </select>
+                </p>
+                <p>
+                    <select name="provincia" id="provincia">
+                    <option>[Selecciona]</option>
+                    <option value="albacete">Albacete</option>
+                    <option value="ciudadreal">Ciudad Real</option>
+                    <option value="cuenca">Cuenca</option>
+                    <option value="guadalajara">Guadalajara</option>
+                    <option value="toledo">Toledo</option>
+                    </select>
+                </p>
+            </p>
+            <p>
+                <p><label for="cp"><b>Código Postal*</b></label></p>
+                <p><input type="text" id="cp" maxlength="5" size="130" pattern="[0-9]"></p>
+            </p>
+            <p>
+                <p><label for="email"><b>Email*</b></label></p>
+                <p><input type="text" id="email" size="130"></p>
+            </p>
+            <p>
+                <p><label for="remail"><b>Repite Email*</b></label></p>
+                <p><input type="text" id="remail" size="130"></p>
+            </p>
+            <p>
+            ATENCIÓN: Recibirás el justicante de inscripción y las comunicaciones del evento en este email.
+            </p>
+            <p>
+                <select name="telefono" id="telefono">
+                    <option value="espana">España (+34)</option>
+                    <option value="francia">Francia (+35)</option>
+                    <option value="reinounido">Reino Unido (+36)</option>
+                    <option value="francia">Francia (+38)</option>
+                </select>
+                <label for="numero"></label>
+                <input type="text" id="numero" maxlength="9" size="130" pattern="[0-9]">
+            </p>
+            <p>
+                <h4 style="text-align: center;"><b>OTROS DATOS</b></h4>
+            </p>
+            <P>
+                <b>¿En qué modalidad participas?*</b>
+            </P>
+            <p>
+                <label for="modalidad"></label>
+                <input type="radio" name="modalidad" id="modalidad" value="silla">Silla de Atletismo<br>
+                <input type="radio" name="modalidad" id="modalidad" value="handbike">Hand Bike<br>
+                Por favor revisa el reglamento para comprobar que cumples con los requisitos de participación. <br>
+                Ver Reglamento(https://rocknrollmadridrun.com/reglamento/)
+            </p>
+            <p>
+                <p><label for="tiempo"><b>Tiempo estimado de llegada a Meta Sillas y Handbikes*</b></label></p>
+                <p>
+                    <select name="horas" id="horas">
+                    <option>Hora</option>
+                    <option value="1h">4 horas</option>
+                    <option value="2h">5 horas</option>
+                    <option value="3h">6 horas</option>
+                    </select><br>
+                    <select name="minutos" id="minutos">
+                        <option>Min.</option>
+                        <option value="1m">00 minutos</option>
+                        <option value="2m">15 minutos</option>
+                        <option value="3m">30 minutos</option>
+                    </select><br>
+                    <select name="segundos" id="segundos">
+                        <option>Seg.</option>
+                        <option value="1s">00 segundos</option>
+                        <option value="2s">15 segundos</option>
+                        <option value="3s">30 segundos</option>
+                    </select><br>
+                    Tiempo máximo 6 horas.
+                </p>
+                <P>
+                    <b>¿Es tu primera participación en el Zurich Rock 'n' Roll Running Series Madrid?*</b>
+                </P>
+                <p>
+                    <label for="participacion"></label>
+                    <input type="radio" name="participacion" id="participacion" value="si">Sí<br>
+                    <input type="radio" name="participacion" id="participacion" value="no">No
+                </p>
+                <p>
+                    <p><label for="maratones"><b>¿Cuántos maratones has completado?*</b></label></p>
+                    <p>
+                        <select name="maratones" id="maratones">
+                        <option>[Selecciona]</option>
+                        <option value="1">1 maratón</option>
+                        <option value="2">2 maratones</option>
+                        <option value="3">3 maratones</option>
+                        </select>
+                    </p>
+                </p>
+                <p>
+                    <p><label for="conocer"><b>¿Cómo conociste la carrera?*</b></label></p>
+                    <p>
+                        <select name="conocer" id="conocer">
+                        <option>[Selecciona]</option>
+                        <option value="prensa">Prensa</option>
+                        <option value="radio">Radio</option>
+                        <option value="television">Televisión</option>
+                        </select>
+                    </p>
+                </p>
+                <p>
+                    <h4 style="text-align: center;"><b>CONTACTO PARA EMERGENCIAS</b></h4>
+                </p>
+                <p>
+                    <p><label for="contacto"><b>Contacto en caso de emergencia*</b></label></p>
+                    <p><input type="text" id="contacto" size="130"></p>
+                </p>
+                <p><label for="temergencia"><b>Teléfono de contacto en caso de emergencia*</b></label></p>
+                <p>
+                    <select name="temergengia" id="temergencia">
+                        <option value="espana">España (+34)</option>
+                        <option value="francia">Francia (+35)</option>
+                        <option value="reinounido">Reino Unido (+36)</option>
+                        <option value="francia">Francia (+38)</option>
+                    </select>
+                    <label for="nemergencia"></label>
+                    <input type="text" id="nemergencia" maxlength="9" size="130" pattern="[0-9]">
+                </p>
+                <p>
+                    <p><label for="relación"><b>Relación con Contacto de Emergencia*</b></label></p>
+                    <p>
+                        <select name="relacion" id="relacion">
+                        <option>[Selecciona]</option>
+                        <option value="pareja">Pareja</option>
+                        <option value="padre">Padre</option>
+                        <option value="hijo">Hijo</option>
+                        </select>
+                    </p>
+                </p>
+                <p>
+                    <h4 style="text-align: center;"><b>LICENCIA FEDERATIVA REAL FEDERACIÓN ESPAÑOLA DE ATLETISMO</b></h4>
+                </p>
+                <p><b>¿Estás federado/a por la Real Federación Española de Atletismo? - Maratón?</b></p>
+                <p>
+                    <label for="federacion"></label>
+                    <input type="radio" name="federacion" id="federacion" value="no">NO (5,00 €)<br>
+                    <input type="radio" name="federacion" id="federacion" value="si">SI (5,00 €)
+                </p>
+                <p>
+                    Si no estás federado, no te preocupes, la inscripción incluye la licencia federativa obligatoria de un día (para el día de la carrera) por lo que no tienesque hacer ningún tramite adicional.<br><br>
+                    Si por el contrario, estás federado por la RFEA, en abril 2024 se comprobará con la RFEA si tu licencia está en vigor, en caso afirmativo se abonaráautomaticamente, en la tarjeta con la que realizaste el pago de la inscripción, el importe de la licencia de día (Maratón 5€).
+                </p>
+                <p>
+                    <h4 style="text-align: center;"><b>CAUSAS SOLIDARIAS</b></h4>
+                </p>
+                <p><b>¿Quieres ayudar a las Causas Solidarias Oficiales?*</b></p>
+                <p>
+                    <label for="solidario"></label>
+                    <input type="radio" name="solidario" id="solidario" value="si">Sí, quiero ayudar (3,00 €)<br>
+                    <input type="radio" name="solidario" id="solidario" value="no">No, no quiero ayudar
+                </p>
+                <p>
+                    <h4 style="text-align: center;"><b>SERVICIOS EXTRAS</b></h4>
+                </p>
+                <p><b>¿Quieres contratar el servicio de fotografía para 42k?*</b></p>
+                <p>
+                    <label for="servicios"></label>
+                    <input type="radio" name="servicios" id="servicios" value="si">Sí, quiero el pack de fotos (29,99 €)<br>
+                    <input type="radio" name="servicios" id="servicios" value="no">No quiero fotos
+                </p>
+                <p>
+                    <h4 style="text-align: center;"><b>LAS 5 GRANDES - ZURICH</b></h4>
+                </p>
+                <p>
+                    <h4 style="text-align: center;"><b>POLÍTICA DE PRIVACIDAD</b></h4>
+                </p>
+                <P>
+                   *¿Has leído y aceptas la política de privacidad (https://rocknrollmadridrun.com/politica-de-privacidad/) del Zurich Rock  ́n ́Roll Running Series Madrid? 
+                </P>
+                <p>
+                    <label for="privacidad"></label>
+                    <input type="radio" name="privacidad" id="privacidad" value="si">Sí, la he leido y acepto.
+                </p>
+                <p>
+                    <h4 style="text-align: center;"><b>CUERDO DE ASUNCIÓN DE RIESGOS Y EXENCIÓN DE RESPONSABILIDAD</b></h4>
+                </p>
+                <P>
+                   *¿Has leído y aceptas el Acuerdo de Asunción de Riesgos y Exención de Responsabilidad(https://rocknrollmadridrun.com/politica-de-reconocimiento-y-asuncion-de-riesgos-y-de-exencion-e-indemnizacion-del-zurich-rock-n-roll-madrid/) del Zurich Rock  ́n ́ Roll Running Series Madrid? 
+                </P>
+                <p>
+                    <label for="responsabilidad"></label>
+                    <input type="radio" name="responsabilidad" id="responsabilidad" value="si">Sí, la he leido y acepto.
+                </p>
+                <p>
+                    <h4 style="text-align: center;"><b>POLÍTICA DE CANCELACIÓN</b></h4>
+                </p>
+                <P>
+                    ¿Has leido y aceptas la Política de Cancelación (https://rocknrollmadridrun.com/inscripciones/)del evento?
+                </P>
+                <p>
+                    <ul>
+                        <li>
+                            Las inscripciones no son transferibles a futuras ediciones del Zurich Rock ‘n’ Roll Running Series Madrid ni a otroseventos organizados por AD. MAPOMA o Rock ́n ́Roll Running Series.
+                        </li>
+                        <br>
+                        <li>
+                            Las inscripciones son reembolsables al 90% en caso de lesión. Para ello, se deberá presentar un parte médico ocial(rmado y sellado) indicando la lesión del participante. La fecha límite para presentar dicho parte médico será el31/03/2024. No se aceptarán solicitudes de devolución por lesión que no cumplan los requisitos aquí descritos.
+                        </li>
+                        <br>
+                        <li>
+                            Cualquier cambio, por motivos de fuerza mayor o circunstancias ajenas a la organización de la carrera (incluidasrestricciones y/o nuevas condiciones causadas por la Covid19), tanto en los procedimientos, como en el recorrido,como la fecha y/o horarios de la carrera, o la cancelación total o parcial del evento y/o los eventos complementariosno implica, en ningún caso, el derecho a la devolución del importe de la inscripción.
+                        </li>
+                        <br>
+                        <li>
+                            En caso de cambio de fecha del evento, la organización guardará la inscripción para la nueva fecha a todos losparticipantes inscritos. En ningún caso se realizarán devoluciones del importe de la inscripción.
+                        </li>
+                        <br>
+                        <li>
+                            En caso de cancelación total del evento, la organización guardará la inscripción para la próxima edición a todos losparticipantes inscritos. En ningún caso se realizarán devoluciones del importe de la inscripción.
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <label for="cancelacion"></label>
+                    <input type="radio" name="cancelacion" id="cancelacion" value="si">Sí, la he leido y acepto.
+                </p>
+                <p>
+                    <p><label for="cupon"><b>Cupón de descuento</b></label></p>
+                    <p><input type="text" id="cupon"size="130"></p>
+                </p>
+                <p>
+                    Crea tu cuenta de deportista en RockTheSport para acceder al historial de tus inscripciones.
+                </p>
+                <p>
+                    Acepto los términos y condiciones de contratación (https://web.rockthesport.com/es/es/master/condicionesgenerales) parael tratamiento de mis datos y conrmo haber leído y aceptado la Política de Privacidad(https://web.rockthesport.com/es/es/master/politicaprivacidad) de NUONET GESTION, S.L.*
+                </p>
+                <p>
+                    <label for="terminos"></label>
+                    <input type="radio" name="terminos" id="terminos" value="si">Sí, acepto.<br>
+                    <input type="radio" name="terminos" id="terminos" value="no">No, gracias.
+                </p>
+                <p>
+                    Deseo recibir información de eventos deportivos, ofertas y novedades de marcas colaboradoras
+                </p>
+                <p>
+                    <label for="publicidad"></label>
+                    <input type="radio" name="publicidad" id="publicidad" value="si">Acepto.<br>
+                    <input type="radio" name="publicidad" id="publicidad" value="no">No, acepto.
+                </p>
+                <P id="botones" style="text-align: right;">
+                    <input type="reset" value="Cancelar" id="boton1">
+                    <button id="boton2">Añadir a otra persona</button>
+                    <input type="submit" value="Continuar" id="boton3">
+                </P>
+                <p style="text-align: right;">
+                    Importes con impuestos incluidos.<br>
+                    Gastos de gestión no incluidos.
+                </p>
+                <p style="text-align: center;">
+                    MAPOMA+34 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 914479641E-MailWeb &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (https://rocknrollmadridrun.com/)
+                </p>
+                <p style="text-align: center;">
+                    Twitter (https://twitter.com/RNRmadmaraton) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Facebook (https://www.facebook.com/RnRMadrid)
+                </p>
+        </form>
+    </div>
+</body>
+</html>
